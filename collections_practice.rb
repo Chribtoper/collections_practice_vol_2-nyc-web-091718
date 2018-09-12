@@ -61,6 +61,4 @@ organized = {}
   schools.each do |school, location|
       organized
     end
-  end
-
 end
