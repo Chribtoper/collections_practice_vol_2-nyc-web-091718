@@ -44,4 +44,5 @@ def count_elements(array)
       arr << {key => val, :count => val}
     end
   end
+  arr
 end
