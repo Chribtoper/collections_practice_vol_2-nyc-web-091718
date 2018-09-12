@@ -60,7 +60,10 @@ def organize_schools(schools)
 organized = {}
   schools.each do |school, location|
       location.each do |loc, val|
-        puts y
+        if organized.has_key?(val)
+        else
+          organized[value] = []
+        end
       end
     end
 end
