@@ -35,11 +35,11 @@ end
 
 def count_elements(array)
 arr = []
-array.each do |element|
+array.each do |element, index|
   if arr.include?(element[:name])
-      arr.find { |element| element[:count] += 1}
     else
     element[:count] = 1
     arr << element
+    end
   end
 end
