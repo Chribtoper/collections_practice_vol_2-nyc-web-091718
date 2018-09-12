@@ -55,3 +55,7 @@ end
 def find_cool(array)
   array.select { |val| val[:temperature] == "cool"}
 end
+
+def organized_schools(schools)
+
+end
