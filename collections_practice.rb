@@ -32,3 +32,7 @@ end
 def remove_non_strings(array)
   array.delete_if { |e| e != e.to_s }
 end
+
+def count_elements(array)
+  array.size
+end
