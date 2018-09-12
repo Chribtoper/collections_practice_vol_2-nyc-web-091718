@@ -43,4 +43,5 @@ count = []
       count[element][:count] = 1
     end
   end
+  count
 end
