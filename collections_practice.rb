@@ -34,6 +34,7 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
+check = nil
 count = array.collect do |element|
     if element.include?(:count)
       element[:count] += 1
