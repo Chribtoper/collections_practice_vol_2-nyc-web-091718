@@ -35,10 +35,11 @@ end
 
 def count_elements(array)
 elements = array.uniq
+elements.each { |x| x[:count] = 1}
   array.each do |ele|
     elements.each do |new_ele|
       if ele[:name] == new_ele[:name]
-        new_ele[:count] = 1
+        new_ele[:count] += 1
       end
     end
   end
