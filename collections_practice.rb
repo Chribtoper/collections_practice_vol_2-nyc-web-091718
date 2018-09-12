@@ -47,6 +47,5 @@ elements.each { |x| x[:count] = 0 }
 end
 
 def merge_data(keys, data)
-  puts keys
-  puts data
+  puts keys.merge(data)
 end
