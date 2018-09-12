@@ -36,7 +36,7 @@ end
 def count_elements(array)
 count = []
   array.each do |element|
-    if count.has_key?(element)
+    if count.include?(element)
       count[element][:count] += 1
     else
       count << element
