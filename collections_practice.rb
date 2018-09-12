@@ -35,8 +35,9 @@ end
 
 def count_elements(array)
 arr = []
+hashcheck = nil
   array.each do |element|
-    if arr.include?(element)
+    if arr.has_key?(element)
       arr[element][:count] += 1
     else
       element[:count] = 1
