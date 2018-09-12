@@ -38,7 +38,7 @@ arr = []
 index = 0
   array.each do |element|
     if arr.include?(element)
-      arr[]
+      arr[index][element][:count] += 1
       index += 1
     else
       element[:count] = 1
