@@ -59,12 +59,8 @@ end
 def organize_schools(schools)
 organized = {}
   schools.each do |school, location|
-    location.each do |x|
-      if organized.include?(x)
-      else
-        organized.push(x)
-      end
+      organized
     end
   end
-  puts organized
+
 end
