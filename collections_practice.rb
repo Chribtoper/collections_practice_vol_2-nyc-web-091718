@@ -63,7 +63,7 @@ organized = {}
         if organized.has_key?(val)
           organized[val] << school
         else
-          organized[val] = []
+          organized[val] = [school]
             organized[val] << school
         end
       end
