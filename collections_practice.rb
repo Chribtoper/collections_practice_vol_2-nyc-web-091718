@@ -64,7 +64,7 @@ organized = {}
           organized[val] << school
         else
           organized[val] = []
-            organized[val] << school.key
+            organized[val] << school
         end
       end
     end
