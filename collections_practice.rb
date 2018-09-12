@@ -42,4 +42,5 @@ elements = array.uniq
       end
     end
   end
+  elements
 end
