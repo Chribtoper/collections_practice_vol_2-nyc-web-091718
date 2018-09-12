@@ -59,7 +59,7 @@ end
 def organize_schools(schools)
 organized = {}
   schools.each do |school, location|
-      location.each do |loc, y|
+      location.each do |loc, val|
         puts y
       end
     end
