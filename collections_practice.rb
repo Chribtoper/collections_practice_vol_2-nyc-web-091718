@@ -53,5 +53,5 @@ def merge_data(keys, data)
 end
 
 def find_cool(array)
-  array.find { |val| val[:temperature] == "cool"}
+  array.select { |val| val[:temperature] == "cool"}
 end
