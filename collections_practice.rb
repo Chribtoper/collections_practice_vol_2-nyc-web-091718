@@ -34,13 +34,14 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-check = nil
-count = array.collect do |element|
-    if element == check || check
-      element[:count] += 1
-    else
-      element[:count] = 1
+  count = {}
+  arr = []
+  array.each do |element|
+    count[element] += 1
+  end
+  count.each do |element, value|
+    element.each do |key, val|
+      arr << {key => val, :count => val}
     end
   end
-  count
 end
