@@ -51,3 +51,7 @@ def merge_data(keys, data)
       key.merge(data[0][key[:first_name]].to_h)
     end
 end
+
+def find_cool(array)
+  array.find { |val| val[:temperature] == "cool"}
+end
