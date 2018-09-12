@@ -39,7 +39,6 @@ im_an_idiot = nil
   array.each do |element|
     if im_an_idiot != element || im_an_idiot == nil
       im_an_idiot = element
-    else
       element[:count] = 1
       arr << element
     end
