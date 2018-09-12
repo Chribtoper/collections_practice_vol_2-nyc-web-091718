@@ -62,7 +62,7 @@ organized = {}
     location.each do |x|
       if organized.include?(x)
       else
-        organized << x
+        organized.push(x)
       end
     end
   end
