@@ -34,5 +34,13 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  array.size
+count = []
+  array.each do |element|
+    if count.has_key?(element)
+      
+    else
+      count << element
+      count[element][:count] == 1
+    end
+  end
 end
