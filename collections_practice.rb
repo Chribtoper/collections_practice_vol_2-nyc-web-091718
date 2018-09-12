@@ -47,10 +47,7 @@ elements.each { |x| x[:count] = 0 }
 end
 
 def merge_data(keys, data)
-  array = []
-    keys.each do |hash|
-      data.each do |names|
-
-      end
+  keys.map do |key|
+      key.merge(data[0][key[:first_name]].to_h)
     end
 end
