@@ -35,11 +35,10 @@ end
 
 def count_elements(array)
 count = array.collect do |element|
-    if count.any?(element)
+    if element.include?(element)
       count[element][:count] += 1
     else
-      count << element
-      count[element][:count] = 1
+
     end
   end
   count
