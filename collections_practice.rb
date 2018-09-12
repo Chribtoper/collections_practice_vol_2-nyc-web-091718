@@ -61,7 +61,7 @@ organized = {}
   schools.each do |school, location|
       location.each do |loc, val|
         if organized.has_key?(val)
-          organized[val] << school.key
+          organized[val] << school
         else
           organized[val] = []
             organized[val] << school.key
