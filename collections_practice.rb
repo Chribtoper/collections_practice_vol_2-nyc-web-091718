@@ -44,5 +44,6 @@ index = 0
       element[:count] = 1
       arr << element
       index += 1
+    end
   end
 end
