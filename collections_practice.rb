@@ -36,7 +36,7 @@ end
 def count_elements(array)
 check = nil
 count = array.collect do |element|
-    if element.include?(:count)
+    if element == check || check
       element[:count] += 1
     else
       element[:count] = 1
