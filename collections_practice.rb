@@ -35,7 +35,7 @@ end
 
 def count_elements(array)
 elements = array.uniq
-elements.each { |x| x[:count] = 0}
+elements.each { |x| x[:count] = 0 }
   array.each do |ele|
     elements.each do |new_ele|
       if ele[:name] == new_ele[:name]
