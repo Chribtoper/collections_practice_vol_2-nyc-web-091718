@@ -38,7 +38,7 @@ elements = array.uniq
   array.each do |ele|
     elements.each do |new_ele|
       if ele[:name] == new_ele[:name]
-        new_ele[:count] += 1
+        new_ele[:count] = 1
       end
     end
   end
