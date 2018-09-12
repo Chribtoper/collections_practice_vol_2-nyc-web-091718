@@ -34,8 +34,7 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-count = []
-  array.each do |element|
+count = array.collect do |element|
     if count.any?(element)
       count[element][:count] += 1
     else
