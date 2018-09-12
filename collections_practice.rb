@@ -45,3 +45,8 @@ elements.each { |x| x[:count] = 0 }
   end
   elements
 end
+
+def merge_data(keys, data)
+  puts keys
+  puts data
+end
