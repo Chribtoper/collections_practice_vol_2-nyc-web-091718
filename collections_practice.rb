@@ -37,10 +37,10 @@ def count_elements(array)
 count = []
   array.each do |element|
     if count.has_key?(element)
-      
+      count[element][:count] += 1
     else
       count << element
-      count[element][:count] == 1
+      count[element][:count] = 1
     end
   end
 end
