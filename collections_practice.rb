@@ -34,15 +34,8 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  count = {}
-  arr = []
+arr = []
   array.each do |element|
-    count[element] += 1
+    
   end
-  count.each do |element, value|
-    element.each do |key, val|
-      arr << {key => val, :count => val}
-    end
-  end
-  arr
 end
