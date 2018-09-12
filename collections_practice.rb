@@ -34,12 +34,7 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-arr = []
-array.each do |element|
-  if arr.include?(element[:name])
-    else
-    element[:count] = 1
-    arr << element
-    end
-  end
+elements = array.uniq
+array.each do |ele|
+
 end
