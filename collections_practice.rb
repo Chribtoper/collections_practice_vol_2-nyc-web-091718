@@ -59,6 +59,6 @@ end
 def organize_schools(schools)
 organized = {}
   schools.each do |school, location|
-    puts location.to_h
+    puts location[:location].to_h
   end
 end
