@@ -38,7 +38,7 @@ count = array.collect do |element|
     if element.include?(:count)
       element[:count] += 1
     else
-
+      element[:count] = 1
     end
   end
   count
