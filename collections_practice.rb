@@ -47,5 +47,10 @@ elements.each { |x| x[:count] = 0 }
 end
 
 def merge_data(keys, data)
-  puts keys.merge(data)
+  array = []
+    keys.each do |hash|
+      data.each do |names|
+
+      end
+    end
 end
