@@ -31,8 +31,7 @@ end
 
 def remove_non_strings(array)
   array.each do |element|
-    if element != element.to_s
-      array.remove(element)
+      element.delete_if { |e| e != e.to_s }
     end
   end
 end
