@@ -37,8 +37,8 @@ def count_elements(array)
 arr = []
 im_an_idiot = nil
   array.each do |element|
-    if hashcheck
-      arr[element][:count] += 1
+    if im_an_idiot != element || im_an_idiot == nil
+      im_an_idiot = element
     else
       element[:count] = 1
       arr << element
