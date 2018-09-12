@@ -63,6 +63,7 @@ organized = {}
       if organized.include?(x)
       else
         organized << x
+      end
     end
   end
   puts organized
