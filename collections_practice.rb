@@ -35,15 +35,12 @@ end
 
 def count_elements(array)
 arr = []
-index = 0
   array.each do |element|
     if arr.include?(element)
-      arr[index][element][:count] += 1
-      index += 1
+      arr[element][:count] += 1
     else
       element[:count] = 1
       arr << element
-      index += 1
     end
   end
 end
