@@ -65,4 +65,5 @@ organized = {}
         organized << x
     end
   end
+  puts organized
 end
